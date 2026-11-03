@@ -262,3 +262,73 @@ footer a {
     font-size: 2.75rem;
   }
 }
+/* 10. Tombol tema, filter, dan label kategori */
+.tombol-tema {
+padding: 0.5rem 0.9rem;
+border: 2px solid #FFFFFF;
+background-color: transparent;
+font-size: 0.9rem;
+}
+/* Bagian hasil kalkulator */
+#hasil {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    display: none;
+}
+
+/* Efek tombol hitung */
+button {
+    background-color: #ed3347;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efek ketika mouse diarahkan ke tombol */
+button:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+/* Efek ketika tombol ditekan */
+button:active {
+    transform: scale(0.96);
+}
+
+/* Tampilan input */
+input {
+    width: 440px;
+    max-width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Efek ketika input dipilih */
+input:focus {
+    outline: none;
+    border-color: #1e3a5f;
+    box-shadow: 0 0 5px rgba(30, 58, 95, 0.3);
+}
+
+/* Tampilan responsif untuk HP */
+@media (max-width: 600px) {
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
