@@ -1,7 +1,7 @@
 // Kalkulator nilai rapor di Console
 
 // 1. Pesan pertama ke console
-console.log("Halo, saya Bagas!");
+console.log("Halo, saya Marvell!");
 console.log("Ini latihan JavaScript pertamaku.");
 
 // 2. Data Siswa 
@@ -124,4 +124,5 @@ function ganjilGenap(angka) {
 }
 const celsiusKeFahrenheit = (celsius) => {
     return celsius * 9 / 5 + 32;
+
 };
