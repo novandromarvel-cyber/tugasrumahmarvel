@@ -332,3 +332,130 @@ input:focus {
         width: 100%;
     }
 }
+
+:root {
+  --warna-latar: #F1FAEE;
+  --warna-kartu: #FFFFFF;
+}
+body.gelap {
+  --warna-latar: #121A24;
+  --warna-kartu: #1C2836;
+}
+
+.kartu {
+  background-color:var(--warna-kartu);
+}
+
+/* 10. Tombol tema, filter, dan label kategori */
+.tombol-tema {
+padding: 0.5rem 0.9rem;
+border: 2px solid #FFFFFF;
+background-color: transparent;
+font-size: 0.9rem;
+}
+
+
+/* 11. Pengaturan warna tema */
+
+:root {
+    --warna-latar: #F1FAEE;
+    --warna-teks: #333333;
+    --warna-judul: #1D3557;
+    --warna-kartu: #FFFFFF;
+    --warna-garis: #DDDDDD;
+}
+
+/* Tema gelap */
+body.gelap {
+    --warna-latar: #121A24;
+    --warna-teks: #E3E8EE;
+    --warna-judul: #E3E8EE;
+    --warna-kartu: #1C2836;
+    --warna-garis: #3B4858;
+}
+
+/* Warna utama halaman */
+body {
+    background-color: var(--warna-latar);
+    color: var(--warna-teks);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Judul */
+h1, h2, h3 {
+    color: var(--warna-judul);
+}
+
+/* Kartu */
+.kartu {
+    background-color: var(--warna-kartu);
+    border-color: var(--warna-garis);
+}
+
+/* Tabel */
+td {
+    color: var(--warna-teks);
+}
+
+td, th {
+    border-color: var(--warna-garis);
+}
+
+/* Input */
+input, select, textarea {
+    background-color: var(--warna-kartu);
+    color: var(--warna-teks);
+    border-color: var(--warna-garis);
+}
+
+/* Tombol tema */
+.tombol-tema {
+    padding: 0.5rem 0.9rem;
+    border: 2px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+}
+
+.keterangan {
+  font-size: 0.875rem;
+}
+
+.filter {
+display: flex;
+flex-wrap: wrap;
+gap: 0.5rem;
+margin-bottom: 1rem;
+}
+
+.tombol-filter {
+padding: 0.5rem 1rem;
+border: 2px solid var(--warna-garis);
+background-color: var(--warna-kartu);
+color: var(--warna-judul);
+}
+
+.label {
+display: inline-block;
+padding: 0.1rem 0.6rem;
+margin-bottom: 0.5rem;
+border-radius: 999px;
+background-color: var(--warna-latar);
+color: var(--warna-judul);
+font-size: 0.85rem;
+font-weight: 600;
+}
+
+/* Tombol filter proyek */
+.filter-proyek {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.filter-proyek button {
+    width: auto;
+    padding: 10px 20px;
+    border-radius: 6px;
+}

@@ -61,8 +61,8 @@ console.log(`predikat(70) = ${predikat(70)}`); // C
 console.log(`predikat(69) = ${predikat(69)}`); // D
 
 // 6. Rapor beberapa siswa
-console.log(rapor("Bagas", 85, 78, 89));
-console.log(rapor("Sinta", 92, 88, 86));
+console.log(rapor("adit stecu", 85, 78, 89));
+console.log(rapor("aden ganteng", 92, 88, 86));
 console.log(rapor("Budi", 70, 65, 72));
 
 // 7. Kalkulator Nilai
@@ -126,3 +126,12 @@ const celsiusKeFahrenheit = (celsius) => {
     return celsius * 9 / 5 + 32;
 
 };
+
+
+const hobi = ["Bermain futsal", "Membaca komik", "Mendesain poster"];
+
+for (const item of hobi) {
+    console.log(`Hobi saya: ${item}`);
+}
+
+console.log(`Jumlah hobi: ${hobi.length}`);

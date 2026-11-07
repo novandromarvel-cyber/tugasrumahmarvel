@@ -8,8 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
-  <script src="js/latihan.js" defer></script>
+  <script src="js/main.js" defer></script>
   <script src="js/logika.js" defer></script>
 </head>
 <body>
@@ -24,6 +23,7 @@
           <li><a href="kalkulator.html">Kalkulator</a></li>
         </ul>
       </nav>
+      <button type="button" id="tombol-tema" class="tombol-tema">Mode Gelap</button>
       <!-- Tantangan: menu ponsel yang bisa dibuka-tutup -->
       <details class="menu-ponsel">
         <summary>Menu</summary>
@@ -77,11 +77,8 @@
 
         <section class="kartu">
           <h2>Keahlian</h2>
-          <ul>
-            <li>HTML dasar (sedang dipelajari)</li>
-            <li>Mengetik cepat</li>
-            <li>Desain poster dengan Canva</li>
-          </ul>
+          <ul id="daftar-skill"></ul>
+          <p id="jumlah-skill"></p>
         </section>
       </div>
 
@@ -123,9 +120,6 @@
       <a href="https://github.com/" target="_blank">GitHub</a> |
       <a href="https://www.youtube.com/" target="_blank">YouTube</a></p>
     <p>&copy; 2026 Marvell Rizky Novandro. Dibuat di Kelas Industri UBIG.</p>
-  </footer>
-  <script src="js/script.js"></script>
-  <script src="js/latihan.js"></script>
-  <script src="js/logika.js"></script>
+    </footer>
 </body>
 </html>
