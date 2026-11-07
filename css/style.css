@@ -447,15 +447,29 @@ font-weight: 600;
 }
 
 /* Tombol filter proyek */
-.filter-proyek {
-    display: flex;
-    gap: 10px;
-    margin: 20px 0;
-    flex-wrap: wrap;
+.tombol-filter {
+    padding: 10px 20px;
+    border: 2px solid #1d3557;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #1d3557;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.filter-proyek button {
-    width: auto;
-    padding: 10px 20px;
-    border-radius: 6px;
+/* Tombol filter yang sedang aktif */
+.tombol-filter.aktif {
+    background-color: #fe0707;
+    color: white;
+}
+
+/* Tampilan tombol aktif pada tema gelap */
+body.gelap .tombol-filter {
+    border-color: #90CAF9;
+    color: #90CAF9;
+}
+
+body.gelap .tombol-filter.aktif {
+    background-color: #f20000;
+    color: #f8f6f6;
 }

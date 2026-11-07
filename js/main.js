@@ -74,7 +74,7 @@ const proyek = [
     {
         judul: "Tabel Jadwal Belajar",
         kategori: "HTML",
-        gambar: "img/proyek-jadwal.png",
+        gambar: "img/jadwal.png",
         alt: "Tangkapan layar tabel jadwal belajar mandiri",
         deskripsi: "Jadwal belajar mingguan dengan thead dan tbody."
     },
@@ -130,8 +130,6 @@ function tampilkanProyek(daftar) {
         `Menampilkan ${daftar.length} dari ${proyek.length} proyek`;
 }
 
-
-
 // 8. Fungsi memasang filter proyek
 function pasangFilter(idTombol, kategori) {
     const tombol = document.querySelector(idTombol);
@@ -139,6 +137,15 @@ function pasangFilter(idTombol, kategori) {
     if (tombol) {
         tombol.addEventListener("click", () => {
 
+            // Menghapus class aktif dari semua tombol
+            document.querySelectorAll(".tombol-filter").forEach((btn) => {
+                btn.classList.remove("aktif");
+            });
+
+            // Memberikan class aktif pada tombol yang diklik
+            tombol.classList.add("aktif");
+
+            // Menampilkan proyek sesuai kategori
             if (kategori === "Semua") {
                 tampilkanProyek(proyek);
             } else {
@@ -146,16 +153,17 @@ function pasangFilter(idTombol, kategori) {
                     proyek.filter((item) => item.kategori === kategori)
                 );
             }
-
         });
     }
 }
 
-// 9. Menampilkan proyek dan memasang tombol filter
+// 9. Menampilkan proyek dan memasang semua filter
 if (daftarProyek && jumlahProyek) {
     tampilkanProyek(proyek);
 
     pasangFilter("#filter-semua", "Semua");
+    pasangFilter("#filter-html", "HTML");
+    pasangFilter("#filter-css", "CSS");
     pasangFilter("#filter-javascript", "JavaScript");
 }
 
