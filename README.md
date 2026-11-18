@@ -72,4 +72,4 @@ tugas_rumah/
 
 ---
 
-Terima kasih telah mengunjungi repositori portofolio saya!
+Terima kasih telah mengunjungi repositori portofolio saya!!
