@@ -66,7 +66,7 @@ const proyek = [
     {
         judul: "Halaman Profil Pertama",
         kategori: "HTML",
-        gambar: "img/proyek-profil.png",
+        gambar: "img/profil.png",
         alt: "Tangkapan layar halaman profil Marvell Rizky Novandro",
         deskripsi: "Halaman web pertama saya, dibuat dengan HTML dasar."
     },
@@ -212,3 +212,21 @@ async function ambilRepo() {
 
 ambilRepo();
 
+// 11. tombol sembunyikan repositori
+const tombol = document.getElementById("tombol-repositori");
+const daftar = document.getElementById("daftar-repositori");
+const status = document.getElementById("status-repositori");
+
+tombol.addEventListener("click", function () {
+
+    daftar.classList.toggle("hidden");
+
+    if (daftar.classList.contains("hidden")) {
+        tombol.textContent = "Tampilkan repositori";
+        status.textContent = "Tampilkan daftar repositori";
+    } else {
+        tombol.textContent = "Sembunyikan repositori";
+        status.textContent = "Sembunyikan daftar repositori";
+    }
+
+});

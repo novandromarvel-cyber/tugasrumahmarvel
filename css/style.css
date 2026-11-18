@@ -473,3 +473,7 @@ body.gelap .tombol-filter.aktif {
     background-color: #f20000;
     color: #f8f6f6;
 }
+
+.hidden {
+    display: none;
+}
