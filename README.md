@@ -6,7 +6,7 @@ Website dirancang dengan tampilan responsif agar dapat diakses melalui berbagai 
 
 ## Tampilan Website
 
-![Preview Website](img/proyek-profil.png)
+![Preview Website](img/profil.png)
 
 ## Fitur Website
 
